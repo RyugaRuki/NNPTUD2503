@@ -11,6 +11,7 @@ app.use(express.urlencoded({ extended: true }));
 // ─── Routes ────────────────────────────────────────────────────────────────
 app.use("/api/products", require("./routes/product.routes"));
 app.use("/api/inventories", require("./routes/inventory.routes"));
+app.use("/api/messages", require("./routes/message.routes"));
 
 // ─── Health check ──────────────────────────────────────────────────────────
 app.get("/", (req, res) => {
